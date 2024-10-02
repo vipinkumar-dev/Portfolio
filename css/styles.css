@@ -1,0 +1,510 @@
+
+:root {
+    --black: #000000;
+    --dark-grey: #4c4f54;
+    --grey: #9e9fa4;
+    --light-grey: #f9fafe;
+    --indigo: #596BBF;
+    --indigo-dark: #2b308b;
+    --light-indigo: #363b8f;
+    --tara: #e2f7e6;
+    --moss-green: #9ed89e;
+    --tumble-weed: #dbb286;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212121;
+    text-decoration: none;
+    font-size: 14px; 
+} 
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+
+}
+
+.navigation button {
+    width: 100px;
+    border-radius: 40px;
+    border: 1px solid #0bceaf;
+    background-color: #fff;
+    color: #0bceaf;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;   
+    cursor: pointer;
+   
+}
+.navigation button:hover {
+
+    background-color: #0bceaf;
+    color: white;
+    transition: all .5s ease-in;
+    border-radius: 0px;
+
+    
+}
+
+
+.navigation span {
+    color: #0bceaf;
+}
+
+.navList a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 16px;
+
+}
+.navList a.active,
+.navList a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 10px;
+    color: #0bceaf;
+}
+.navList a.active {
+    cursor: default;
+}
+
+
+.homePage {
+    display: flex;
+    background-color: #0bceaf;
+    color: white;
+    padding-bottom: 50px;
+    height: 70vh;
+}
+
+.homeImg {
+    flex-basis: calc(100% - 50%);
+}
+
+.homeText {
+    align-self: center;
+}
+
+.homeText h3 {
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+
+.homeText h2 {
+
+}
+
+.homeText h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.homeText button {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    background-color: #0bceaf;
+    color: white;
+}
+
+.about {
+    margin-bottom: 60px;
+}
+
+
+.aboutHeading h2 {
+    text-align: center;
+    margin: 80px 0px 40px 0px;
+    color: #0bceaf;
+    font-size: 30px;
+}
+
+.aboutIMGText {
+    display: flex;
+}
+
+.img {
+    flex-basis: calc(100% - 50%);
+}
+
+.text {
+    flex-basis: calc(100% - 50%);
+}
+
+.text h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.text p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.details {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.details span {
+    flex-basis: 50%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.infoButton button {
+    background-color: white;
+    border:1px solid #0bceaf;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-right: 15px;
+    color: #0bceaf;
+}
+
+.formHeading {
+    flex-basis: 100%;
+}
+
+
+.formHeading h2 {
+    text-align: center;
+    margin: 80px 50px;
+    color: #0bceaf;
+    font-size: 30px;
+
+}
+
+.formsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forms {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.education {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.eduHead {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #0bceaf;
+    margin: 50px 70px;
+}
+
+.educard {
+    flex-basis: calc(100% - 50%);
+    
+}
+
+.educard h3 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.eduText {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    border-left: 1px solid #0bceaf;
+    margin-left: 14px;
+    position: relative;
+}
+
+.eduText::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -3px;
+    background-color: #0bceaf;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
+
+.eduText::after {
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: -7px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #0bceaf;
+}
+
+
+
+.eduText h4 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+
+.eduYear {
+    display: flex;
+}
+
+.eduYear h5 {
+    margin-right: 10px;
+    align-content: center;
+}
+
+.eduText:last-child {
+    padding-bottom: 0px;
+}
+
+.expcard {
+    flex-basis: calc(100% - 50%);
+    
+}
+
+.expcard h3 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    
+} 
+
+.expText {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    border-left: 1px solid #0bceaf;
+    margin-left: 14px;
+    position: relative;
+}
+
+.expText::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -3px;
+    background-color: #0bceaf;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
+
+.expText::after {
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: -7px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #0bceaf;
+}
+
+.expText h4 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.expYear {
+    display: flex;
+}
+
+.expYear h5 {
+    margin-right: 10px;
+    align-content: center;
+}
+
+.expText:last-child {
+    padding-bottom: 0px;
+}
+
+
+.row {
+    display: flex;
+   margin-bottom: 16px; 
+}
+
+.row input {
+    width: 100%;
+    
+}
+
+.twoColumn {
+    min-width: 100%;
+    display: flex;
+
+}
+.oneColumn {
+    min-width: 100%;
+}
+
+.colItem {
+    width: 100%;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+}
+
+
+.colItem input {
+    padding: 10px 15px 10px;
+    border-radius: 25px;
+    border: 1px solid grey;
+    line-height: 24px
+   
+    
+}
+
+.colItem textarea {
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 15px 10px;
+    line-height: 24px;
+}
+
+.row button {
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 1px solid #0bceaf;
+    background-color: #f9fafe;
+    color: #0bceaf;
+    font-weight: bold;
+}
+
+.row button:hover {
+    border: 1px solid black;
+    background-color: #0bceaf;
+    color: white;
+    
+}
+
+.footerContainer {
+    text-align: center;
+    padding: 60px 0px;
+    background-color: #e2f7e6;
+}
+
+    
+
+.footerText ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerText ul li {
+    list-style-type: none;
+    border-right: 2px solid grey;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.footer span{
+    align-items: center;
+}
+
+.footerSpan{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.skills h2 {
+    text-align: center;
+    margin: 75px 0px;
+    font-size: 35px;
+    color: #0bceaf;
+}
+
+.skillChart {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.data {
+    flex-basis: 45%;
+    margin: 0px 10px 20px 0;
+}
+
+.dataChart {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ProgressChart {
+    width: 100%;
+    background-color: var(--grey);
+    border-radius: 20px;
+    height: 20px;
+
+}
+
+.ProgressChart span {
+    border-radius: 20px;
+    display: inline-block;
+    height: 20px;
+    
+}
+
+.dataChart span {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+    
+
+
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+   
